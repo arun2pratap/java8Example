@@ -26,6 +26,11 @@ public class Person {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}	
+	
+	@Override
+	public String toString() {		
+		return "Name: "+ name	+ "  Age: " + age;
 	}
 	
 	public static int compareAges(Person p1, Person p2){

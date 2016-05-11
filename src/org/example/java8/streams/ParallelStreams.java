@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 
 import org.example.java8.dto.Person;
 
-public class Streams {
+public class ParallelStreams {
 	public static void main(String args[]){
 		Predicate<Person> predOlder = (p) -> p.getAge() > 45;
 		Predicate<Person> predYounger = (p) -> p.getAge() <= 45; 
