@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.temporal.ChronoField;
 
 public class LocalDateEx {
 	public static void main(String args[]){
@@ -23,7 +25,6 @@ public class LocalDateEx {
 		System.out.println(lcdtSpecific);
 		
 		Duration duration = Duration.between(lcSpecific, lc);
-		
 		System.out.println(duration);
 	}
 }
