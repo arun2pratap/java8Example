@@ -1,5 +1,6 @@
 package org.example.java8.datetime;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -20,5 +21,9 @@ public class LocalDateEx {
 		System.out.println(lcdt);
 		LocalDateTime lcdtSpecific = LocalDateTime.of(lc, localTime);
 		System.out.println(lcdtSpecific);
+		
+		Duration duration = Duration.between(lcSpecific, lc);
+		
+		System.out.println(duration);
 	}
 }
