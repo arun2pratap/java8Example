@@ -3,7 +3,6 @@ package org.example.java8.streams;
 import java.util.stream.Stream;
 
 import org.example.java8.dto.Person;
-
 public class ArrayStream {
 
 	public static void main(String[] args) {
@@ -12,4 +11,5 @@ public class ArrayStream {
 		Stream<Person> streamOfArray = Stream.of(people);
 		streamOfArray.filter((p) -> p.getAge() > 35).forEach( p -> System.out.println(p));	
 	}
+	
 }
